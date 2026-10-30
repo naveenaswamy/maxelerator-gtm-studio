@@ -1,0 +1,16 @@
+{
+  "startup_id": "qubit-sense",
+  "name": "QubitSense",
+  "one_liner": "Quantum magnetometers that find corrosion inside pipelines without digging them up.",
+  "sector": "quantum sensing",
+  "stage": "seed",
+  "product": "A drone- and pig-mounted NV-diamond magnetometer plus a cloud model that flags wall loss in buried steel pipelines; inspection reports delivered per kilometre surveyed.",
+  "target_customers": "Integrity managers at midstream oil and gas operators and municipal water utilities in North America",
+  "pricing_today": "One paid pilot at $40k for 25 km",
+  "traction": "1 paid pilot with a Texas midstream operator; 2 utilities in LOI talks",
+  "team": "CEO (ex-pipeline integrity engineer), CTO (PhD quantum sensing), 4 engineers",
+  "goals_90d": "Convert the pilot into an annual contract and sign 2 more pilots",
+  "constraints": "Field crews are scarce; regulatory acceptance (PHMSA) of the method is pending",
+  "founder_email": "founder@qubitsense.example",
+  "sells_to_aws_customers": false
+}

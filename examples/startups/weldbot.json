@@ -1,0 +1,12 @@
+{
+  "startup_id": "weldbot",
+  "name": "Weldbot",
+  "one_liner": "Collaborative welding robots that program themselves from a CAD file.",
+  "sector": "robotics",
+  "stage": "pre-seed",
+  "product": "Collaborative welding robots that program themselves from a CAD file, delivered as robots-as-a-service: customers rent each robot monthly, with no upfront hardware price.",
+  "target_customers": "Plant managers at job shops with 20 to 200 welders",
+  "pricing_today": "Robots-as-a-service: $4,000 per robot-month including 120 arc-hours per robot per month, plus $15 per arc-hour above 120 per robot per month. Paid pilot: $15,000 for 1 robot for 8 weeks from commissioning.",
+  "traction": "One pilot running: 1 robot for 8 weeks at $15,000, with the clock starting at commissioning. The customer provides floor space, a weld cell operator and 5 representative parts. Success means programming time per new part under 30 minutes and weld rework under 2%.",
+  "constraints": "Hardware lead time is 10 weeks"
+}

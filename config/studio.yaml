@@ -1,0 +1,98 @@
+# Maxelerator GTM Studio configuration.
+# Every playbook is built from these sections, in this order.
+# `owner` is the agent role that writes the section; `credits` is what FlexPrice meters for it.
+
+studio:
+  name: Maxelerator GTM Studio
+  default_credits_per_startup: 500      # loaded into each startup's FlexPrice wallet at onboarding
+  finalize_credits: 5                   # charged once when the playbook is assembled
+  pricing_credits: 5                    # charged per pricing-model assignment (RecommendPricingModel)
+
+roles:
+  strategist:
+    display_name: Maxel Strategist
+    env_prefix: STRATEGIST              # STRATEGIST_AGENT_ID / STRATEGIST_API_KEY
+    prompt: strategist.md
+  market_analyst:
+    display_name: Maxel Market Analyst
+    env_prefix: MARKET_ANALYST
+    prompt: market_analyst.md
+  pricing_architect:
+    display_name: Maxel Pricing Architect
+    env_prefix: PRICING_ARCHITECT
+    prompt: pricing_architect.md
+  messaging_writer:
+    display_name: Maxel Messaging Writer
+    env_prefix: MESSAGING_WRITER
+    prompt: messaging_writer.md
+  launch_planner:
+    display_name: Maxel Launch Planner
+    env_prefix: LAUNCH_PLANNER
+    prompt: launch_planner.md
+
+sections:
+  - id: market_icp
+    title: Market and ideal customer profile
+    owner: market_analyst
+    credits: 10
+    guidance: >
+      Size the beachhead market (TAM/SAM/SOM with stated assumptions), name the first
+      buyer segment, the economic buyer, the technical evaluator and the user. List
+      qualifying and disqualifying signals. Deeptech: name the proof a buyer needs
+      (pilot, benchmark, certification) before purchase.
+  - id: positioning_messaging
+    title: Positioning and messaging
+    owner: messaging_writer
+    credits: 10
+    guidance: >
+      One-line positioning statement, the category, three value pillars with proof
+      points, and a message table by persona (pain, message, proof).
+  - id: pricing_packaging
+    title: Pricing and packaging
+    owner: pricing_architect
+    credits: 10
+    guidance: >
+      Recommend a pricing model tied to the unit of value (usage, credits, outcome,
+      seat + usage hybrid). Give tiers with prices, the billable metric, and a ready
+      FlexPrice setup: metered feature names, event_name, aggregation, plan and price
+      lines, wallet/credit rules. Note the AWS Marketplace single-usage-dimension
+      constraint if the startup will list there.
+  - id: channels_aws
+    title: Channels and partnerships
+    owner: launch_planner
+    credits: 10
+    guidance: >
+      Rank 3-5 channels (founder-led sales, design partners, corporate innovation
+      programs, cloud marketplaces, integrators) with why, cost and first step. Include
+      AWS Marketplace only if the startup's buyers hold AWS committed spend; otherwise
+      say why it is deferred.
+  - id: sales_play
+    title: Sales play
+    owner: messaging_writer
+    credits: 10
+    guidance: >
+      Discovery questions, a 5-step demo flow, a pilot/proof-of-concept structure with
+      success criteria, and an objection-handling table.
+  - id: launch_90d
+    title: 90-day launch plan
+    owner: launch_planner
+    credits: 10
+    guidance: >
+      Week-by-week milestones for 90 days split into three 30-day phases, with an
+      owner and an exit criterion per phase. Tie milestones to the Maxelerator
+      cohort calendar (mentor sessions, demo day).
+  - id: metrics_risks
+    title: Metrics, risks and open questions
+    owner: strategist
+    credits: 10
+    guidance: >
+      North-star metric, 5-7 leading indicators with targets, top risks with
+      mitigations, and the open questions the founder must answer.
+  - id: executive_summary
+    title: Executive summary
+    owner: strategist
+    credits: 15
+    final: true   # written last, after every other section is saved
+    guidance: >
+      Half a page: who we sell to first, why they buy, how we price, how we reach them,
+      and the three numbers that define success at day 90.

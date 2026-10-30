@@ -1,0 +1,2 @@
+[console_scripts]
+maxel = maxel.cli:main

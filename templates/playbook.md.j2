@@ -1,0 +1,24 @@
+# {{ profile.name }}: Go-to-Market Playbook
+
+{{ profile.one_liner }}
+
+| | |
+| --- | --- |
+| Sector | {{ profile.sector }} |
+| Stage | {{ profile.stage }} |
+| Program | Maxelerator, built by {{ studio }} |
+| Playbook ID | `{{ meta.playbook_id }}` |
+| Generated | {{ generated_at }} |
+
+{% for s in sections %}
+## {{ loop.index }}. {{ s.title }}
+
+{{ s.body }}
+
+<sub>Drafted by {{ s.owner }}. Review with your Maxelerator mentor before acting on it.</sub>
+
+{% endfor %}
+---
+
+This playbook was drafted by AI agents from the intake profile you submitted. Market sizes,
+prices and dates are starting hypotheses: validate them in customer conversations.

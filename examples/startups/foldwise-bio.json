@@ -1,0 +1,16 @@
+{
+  "startup_id": "foldwise-bio",
+  "name": "Foldwise Bio",
+  "one_liner": "AI agents that design and rank antibody variants before they reach the wet lab.",
+  "sector": "bio-AI",
+  "stage": "pre-seed",
+  "product": "A multi-agent platform (structure prediction, developability scoring, liability screening) that returns ranked antibody candidates via API and a lab notebook integration.",
+  "target_customers": "Discovery heads at mid-size biotechs and CROs running antibody programs",
+  "pricing_today": "Not priced yet; considering per-design-campaign pricing",
+  "traction": "3 design partners running free campaigns; one reported a 4x cut in candidates sent to the lab",
+  "team": "CEO (computational biologist), CTO (ML engineer), 2 scientists",
+  "goals_90d": "Turn design partners into paid pilots and launch self-serve credits for small labs",
+  "constraints": "Customer data is confidential; many buyers require deployment in their own AWS account",
+  "founder_email": "team@foldwise.example",
+  "sells_to_aws_customers": true
+}
