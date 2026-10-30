@@ -1,0 +1,7 @@
+   .env
+   var/
+   __pycache__/
+   *.egg-info/
+   .pytest_cache/
+   .venv/
+   training/
